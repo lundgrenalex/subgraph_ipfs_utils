@@ -1,4 +1,4 @@
-# Subgraphs ipfs copier
+# Copy subgraphs between ipfs nodes
 
 Sometimes we need to move subgraphs just by hash between few ipfs node, there tools help you with it.
 
@@ -30,13 +30,13 @@ IPFS_PORT=5001
 
 This app are trying to get main subgraph config from ipfs and download all deps from current IPFS Node.
 
-```bash
+```shell
 python3 src/apps/copy_subgraph_from_ipfs.py {YOUR_SUBGRAPH_IPFSHASH}
 ```
 
 ### Upload existing subgraph to ipfs node
 
-```bash
+```shell
 python3 src/apps/direct_subgraph_copy_to_ipfs_without_mapping.py {YOUR_SUBGRAPH_IPFSHASH}
 ```
 
@@ -44,6 +44,6 @@ python3 src/apps/direct_subgraph_copy_to_ipfs_without_mapping.py {YOUR_SUBGRAPH_
 
 This app app upload already downloaded subgraph files to IPFS node.
 
-```bash
+```shell
 python3 src/apps/copy_subgraph_to_ipfs.py {YOUR_SUBGRAPH_IPFSHASH}
 ```
